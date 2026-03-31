@@ -1,2 +1,6 @@
-main: main.c lib/alerta.c lib/cs50.c
-	gcc -Wall -Wextra -Werror main.c lib/alerta.c lib/cs50.c -Ilib -o alerta
+CC := gcc
+CFLAGS := -Wall -Wextra -Werror 
+CLIBS := alerta.c lib/cs50.c -Ilib
+
+main: main.c
+	$(CC) $(CFLAGS) $< ${CLIBS} -o alerta
