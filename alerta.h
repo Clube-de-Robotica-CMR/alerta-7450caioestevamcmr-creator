@@ -4,4 +4,3 @@
 void  emitir_alerta (int n);
 
 #endif
-
